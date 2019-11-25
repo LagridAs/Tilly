@@ -2,7 +2,8 @@ package com.telly.controllers;
 
 @Controller
 public class UserController {
-
+ 
+ 
 	@Autowired
 	UserService userService;
 	
