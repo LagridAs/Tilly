@@ -1,5 +1,6 @@
 package com.telly.controllers;
 
+<<<<<<< HEAD
 import java.security.Principal;
 import java.util.List;
 
@@ -82,6 +83,28 @@ public class UserController {
 
 
 
+	
+
+
+@Controller
+public class UserController {
+ 
+ 
+	@Autowired
+	UserService userService;
+	
+	@Autowired
+	ReserveService reserveService;
+
+	@RequestMapping("/login")
+	public String showLogin() {
+		return "login";
+	}	
+	
+	@RequestMapping("/loggedout")
+	public String showLogout() {
+		return "loggedout";
+	}
 	
 
 }
